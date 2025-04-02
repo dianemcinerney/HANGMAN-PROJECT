@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#targetword {
+  font-family: "Courier New", Courier, monospace;
+}
+.cell {
+  width: 30px;
+  height: 25px;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+.keyboard {
+  display: grid;
+  border: 2px solid black;
+  grid-template-columns: repeat(10, 30px);
+}
+
+#letters-correct {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+#letters-incorrect {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+#gamename {
+  font-size: 200px;
+}
+
+#subhead {
+  font-size: 28px;
+}

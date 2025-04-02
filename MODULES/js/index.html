@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="./MODULES/js/script.js" defer type="module"></script> -->
+    <!-- <script src="./game.js" type="module"></script> -->
+
+    <!-- <link rel="stylesheet" href="./css.css" /> -->
+  </head>
+  <body>
+    <header>
+      <div id="game modes"><button id="nov">Novice</button> <button id=" exp">Expert</button></div>
+      <h1 id="gamename">HangMan</h1>
+      <h1 id="subhead">The Gallows</h1>
+      <p id="random-word">    <div id="target word location">XXXXXXXXXX</div></p>
+      <button id="generateWordBtn">Generate Random Word</button>
+      <br />
+  
+      <h3 id="letters" style="color: green">LETTERS</h3>
+      <p>Click on letter to enter guess.</p>
+    </header>
+    <!-- <h2>Guesses</h2>
+    <ul></ul>
+    <h4>Add letter or word</h4>
+    <form>
+      <input type="text" placeholder="add letters" name="guesses" />
+    </form> -->
+    <main>
+<!-- will need to allow for caps and lower cases -->
+      <section class="keyboard" style="text-align: center">
+        <div id="cell1" class="cell"><button onclick="typedLetter('Q')">Q</button></div>
+        <div id="cell2" class="cell"><button onclick="typedLetter('W')">W</button></div>
+        <div id="cell3" class="cell"><button onclick="myFunc()">E</button></div>
+        <div id="cell4" class="cell"><button onclick="myFunc()">R</button></div>
+        <div id="cell5" class="cell"><button onclick="myFunc()">T</button></div>
+        <div id="cell6" class="cell"><button onclick="myFunc()">Y</button></div>
+        <div id="cell7" class="cell"><button onclick="myFunc()">U</button></div>
+        <div id="cell8" class="cell"><button onclick="myFunc()">I</button></div>
+        <div id="cell9" class="cell"><button onclick="myFunc()">O</button></div>
+        <div id="cell10" class="cell">
+          <button onclick="myFunc()">P</button>
+        </div>
+        <div id="cell11" class="cell">
+          <button onclick="typedLetter('A')">A</button>
+        </div>
+        <div id="cell12" class="cell">
+          <button onclick="myFunc()">S</button>
+        </div>
+        <div id="cell13" class="cell">
+          <button onclick="myFunc()">D</button>
+        </div>
+        <div id="cell14" class="cell">
+          <button onclick="myFunc()">F</button>
+        </div>
+        <div id="cell15" class="cell">
+          <button onclick="myFunc()">G</button>
+        </div>
+        <div id="cell16" class="cell">
+          <button onclick="myFunc()">H</button>
+        </div>
+        <div id="cell17" class="cell">
+          <button onclick="myFunc()">J</button>
+        </div>
+        <div id="cell18" class="cell">
+          <button onclick="myFunc()">L</button>
+        </div>
+        <div id="cell19" class="cell">
+          <button onclick="myFunc()">Z</button>
+        </div>
+        <div id="cell21" class="cell">
+          <button onclick="myFunc()">X</button>
+        </div>
+        <div id="cell22" class="cell">
+          <button onclick="myFunc()">C</button>
+        </div>
+        <div id="cell23" class="cell">
+          <button onclick="myFunc()">V</button>
+        </div>
+        <div id="cell24" class="cell">
+          <button onclick="myFunc()">B</button>
+        </div>
+        <div id="cell25" class="cell">
+          <button onclick="myFunc()">N</button>
+        </div>
+        <div id="cell26" class="cell">
+          <button onclick="myFunc()">M</button>
+        </div>
+      </section>
+      <h2>Guesses</h2>
+      <ul id="letters-incorrect"></ul>
+      <ul id="letters-correct"></ul>
+      <!-- **///**need to add functionality**//** -->
+      <h4>Add Letter or Word</h4>
+      <form .form>
+        <input id="inputText" type="text" placeholder="add letters or word" name="guesses" />
+       <div><button id="letterChk">Check Letter</button> <button id="wordChk">Check Word</button></div>
+        <!-- <button type="reset">New Game Reset</button> -->
+        <!-- <button id="btnRefresh" type="button">New Game Reset</button> -->
+      </form>
+      <!-- <article id="gallows" style="color: rgb(218, 135, 11)">
+        Gallows Platform
+      </article> -->
+
+      <h5 id="gameResult" style="color: rgb(20, 32, 202)"></h5>
+
+      <h6 id="game-message">You Win/Lose.....</h6>
+      <button id="btnRefresh" type="button">New Game Reset</button>
+    </main>
+    <script src="./game.js"></script>
+  </body>
+</html>
